@@ -58,6 +58,7 @@ public class MovementInput : MonoBehaviour {
     private void TimelineTrigger_OnTimelineEnd()
     {
         bControlEnabled = true;
+       // GetComponent<Rigidbody>().isKinematic = false;
     }
 
     private void TimelineTrigger_OnPlayTimeline(int Param1)
@@ -65,7 +66,7 @@ public class MovementInput : MonoBehaviour {
          bControlEnabled=false;
         anim.SetTrigger("normal");
         anim.SetFloat("Blend",0);
-
+     //   GetComponent<Rigidbody>().isKinematic=true;
     }
 
     // Use this for initialization

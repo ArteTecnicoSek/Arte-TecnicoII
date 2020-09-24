@@ -29,8 +29,13 @@ public class TimelineTrigger : MonoBehaviour
         {
            controlPlayable.Play();
             OnPlayTimeline?.Invoke(index);
-
+            controlPlayable.stopped += ControlPlayable_stopped;
 
         }
+    }
+
+    private void ControlPlayable_stopped(PlayableDirector obj)
+    {
+        OnTimelineEnd?.Invoke();
     }
 }

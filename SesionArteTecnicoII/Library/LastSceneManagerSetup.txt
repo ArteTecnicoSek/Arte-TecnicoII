@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/asd.unity
+- path: Assets/Scenes/RepasoPrueba1/RepasoPrueba1.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
